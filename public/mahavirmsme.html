@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MahavirMSME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <h1 class="site-name" data-lang-key="siteName">MahavirMSME</h1>
+            <div class="header-right-content">
+                <nav>
+                    <ul>
+                        <li><a href="#home" class="nav-link" onclick="showPage('home')" data-lang-key="navHome">Book</a></li>
+                        <li><a href="#resources" class="nav-link" onclick="showPage('resources')" data-lang-key="navResources">Resources</a></li>
+                        <li><a href="#author" class="nav-link" onclick="showPage('author')" data-lang-key="navAuthor">Author</a></li>
+                        <li><a href="#services" class="nav-link" onclick="showPage('services')" data-lang-key="navServices">Services</a></li>
+                        <li><a href="#" class="nav-link" onclick="openModalAndSetAction('alert', 'Thank you for your message!')" data-lang-key="navContact">Contact</a></li>
+                    </ul>
+                </nav>
+                <button id="language-switcher">
+                    हिन्दी / English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <section id="home" class="page-section active home-section">
+            <h2 class="home-title" data-lang-key="homeTitle"></h2>
+            <div class="home-content-flex">
+                <div class="book-cover-container">
+                    <img src="Pics\cover hindi.jpg" alt="Book Cover Placeholder" class="book-cover"style="width: 450px; height: 575px;"">
+                </div>
+                <div class="book-description-container">
+                    <h3 class="book-heading" data-lang-key="homeBookHeading">
+                        MSME BUSINESS: A Clear and Practical Guide
+                    </h3>
+                    <p class="book-description" data-lang-key="homeBookDesc1">
+                        is not just a business manual — it's a powerful source of motivation, clarity, and practical wisdom for every aspiring and existing entrepreneur in India. Whether you're a student with big dreams, a homemaker with creative skills, a rural youth with ambition, or a struggling shopkeeper with a desire to grow — this book lights the path from idea to implementation.
+                    </p>
+                    <div class="book-list-container" data-lang-key="homeBookList">
+                        <strong>What You’ll Discover in the Book:</strong>
+                        <ul class="book-list">
+                            <li>How to Choose the Right Business Idea that suits your passion, skills, and market demand</li>
+                            <li>Step-by-step Planning to turn your idea into a working business model</li>
+                            <li>Complete Guide to Government Schemes like PMEGP, MUDRA, and Stand-Up India</li>
+                            <li>DPR (Detailed Project Report) creation for funding and loan approvals</li>
+                            <li>Legal Compliance Made Simple – registration, GST, licenses, permits</li>
+                            <li>System Building for Growth – SOPs, KPIs, HR, inventory, accounting</li>
+                            <li>Digital Marketing & Sales on WhatsApp, Facebook, Amazon, IndiaMART</li>
+                            <li>Mindset, Motivation, and Leadership strategies to stay focused and resilient</li>
+                        </ul>
+                    </div>
+                    <p class="book-why-different" data-lang-key="homeBookWhyDifferent">
+                        <span class="inline-block align-middle mr-2"></span>
+                        <strong>Why This Book is Different:</strong><br>
+                        This is not a theoretical or academic book. It is a hands-on action guide, built from over 25 years of real-world experience in business development, MSME consultancy, and innovation strategy. The author brings powerful insights from working with more than 50 MSMEs, including turning around struggling businesses and designing world-class systems.<br>
+                        More than business techniques, this book gives you the mental strength and inspiration to push past fear, uncertainty, and hesitation. You'll learn how to think like an entrepreneur, how to bounce back from setbacks, and how to lead your team with purpose and confidence.
+                    </p>
+                    <a href="https://www.amazon.in/MSME-BUSINESS-Practical-Government-Entrepreneurs-ebook/dp/B0FJ7LBX74?ref_=ast_author_mpb " target="_blank" class="order-button-eng" data-lang-key="clickToOrder">
+                        Order Now
+                    </a>
+                    <a href="https://store.pothi.com/book/%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%BF%E0%A4%B2%E0%A5%8B%E0%A4%95-%E0%A4%95%E0%A5%81%E0%A4%AE%E0%A4%BE%E0%A4%B0-%E0%A4%9D%E0%A4%BE-msme-business-%E0%A4%8F%E0%A4%95-%E0%A4%B8%E0%A5%8D%E0%A4%AA%E0%A4%B7%E0%A5%8D%E0%A4%9F-%E0%A4%94%E0%A4%B0-%E0%A4%B5%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%B5%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BF%E0%A4%95-%E0%A4%97%E0%A4%BE%E0%A4%87%E0%A4%A1/ " target="_blank" class="order-button-hin" data-lang-key="clickToOrder-hindi">
+                        हिन्दी वर्ज़न
+                    </a>
+                    <p class="order-links-soon" data-lang-key="orderLinksSoon">
+                        (Links to various platforms will be added here soon.)
+                    </p>
+                </div>
+            </div>
+            <div class="upcoming-books-container">
+                <h3 class="upcoming-books-title" data-lang-key="upcomingBooksTitle">Upcoming Books</h3>
+                <p class="upcoming-books-desc" data-lang-key="upcomingBooksDesc">
+                    Stay tuned for more valuable resources and guides designed to further empower MSMEs across India. Future books will delve into advanced strategies, specific industry insights, and more.
+                </p>
+            </div>
+        </section>
+        <!-- resources section -->
+        <section id="resources" class="page-section resources-section">
+            <h2 class="section-title" data-lang-key="resourcesTitle">Resources for MSMEs</h2>
+            
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3 class="grid-item-title" style="color: #90cdf4; margin-top: 5px;" data-lang-key="projectReportsTitle">Project Reports</h3>
+                    <p class="grid-item-desc" data-lang-key="projectReportsDesc">
+                        Download essential project reports that can guide you through various business planning stages. These reports provide structured frameworks and insights crucial for new ventures.
+                    </p>
+                
+                    <div id="project-reports-categories-container" class="report-list-container">
+                        </div>
+                    
+                    <p data-lang-key="belowContent1">The Government of India has provided more than 1,000 business ideas and detailed project reports (DPRs) for free at the portal:- </p>
+                    <p data-lang-key="linkGovt">
+                        <a href="//www.kviconline.gov.in/pmegp/pmegpweb/docs/jsp/newprojectReports.jsp" style="color: aqua;">Click Here</a>
+                    </p>
+                    <p data-lang-key="belowContent2">I sincerely thank the government for this commendable initiative and encourage all of you to explore these reports based on your interests, skills, and needs. This information will help you make strong and informed business decisions.></p>
+                </div>
+                
+                <div class="grid-item">
+                    <div class="bg-gray-700 p-6 rounded-lg shadow-md border border-gray-600">
+                        <h3 class="text-2xl font-semibold text-white mb-4" style="color: #90cdf4; font-size: 32px; margin-top: 5px; margin-bottom: 1rem;" data-lang-key="govtSchemesTitle";">Government Schemes</h3>
+                        <p class="text-md text-gray-300 mb-6" data-lang-key="govtSchemesDesc">
+                            Explore a curated list of government schemes. Select a language to view the relevant PDF documents.
+                        </p>
+                
+                    <div class="button-container mb-6">
+                        <button id="btn-english-schemes" class="lang-button active" onclick="showSchemeList('english')">English PDFs</button>
+                        <button id="btn-hindi-schemes" class="lang-button" onclick="showSchemeList('hindi')">Hindi PDFs</button>
+                    </div>
+                
+                    <div id="english-schemes-list" class="report-list-container">
+                        <div>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/ASPIRE.pdf')">ASPIRE</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Assistance to Training Institutions (ATI) Scheme.pdf')">Assistance to Training Institutions (ATI) Scheme</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Credit Guarantee Scheme for Micro (CGTMSE).pdf')">Credit Guarantee Scheme for Micro (CGTMSE)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Entrepreneurship and Skill Development Programme(ESDP).pdf')">Entrepreneurship and Skill Development Programme(ESDP) (CGTMSE)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Micro & Small Enterprises Cluster Development Programme(MSE-CDP) Scheme.pdf')">Micro & Small Enterprises Cluster Development Programme(MSE-CDP) Scheme</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/MSME - Innovative (Incubation, IPR and Design).pdf')">MSME - Innovative (Incubation, IPR and Design)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/MSME COMPETITIVE (LEAN) SCHEME.pdf')">MSME COMPETITIVE (LEAN) SCHEME</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/National SC-ST Hub Scheme.pdf')">National SC-ST Hub Scheme</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdfenglish/PM Vishwakarma - Enabling Artisans & Craftspeople to scale-up their Enterprises..pdf')">PM Vishwakarma - Enabling Artisans & Craftspeople to scale-up their Enterprises.</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Prime Minister’s Employment Generation Program (PMEGP).pdf')">Prime Minister’s Employment Generation Program (PMEGP)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Procurement and Marketing Support (PMS) Scheme.pdf')">Procurement and Marketing Support (PMS) Scheme</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/english/Scheme of Fund for Regeneration of Traditional Industries(SFURTI).pdf')">Scheme of Fund for Regeneration of Traditional Industries(SFURTI)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/SELF RELIANT INDIA (SRI) FUND.pdf')">SELF RELIANT INDIA (SRI) FUND</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/english/Stand-Up India scheme.pdf')">Stand-Up India scheme</a>
+                        </div>
+                    </div>
+                
+                    <div id="hindi-schemes-list" class="report-list-container hidden">
+                        <div>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/आत्मनिर्भर भारत कोश.pdf')">आत्मनिर्भर भारत कोश</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/उद्यमिता और कौशल विकास कार्यक्रम ( ईएसडीपी).pdf')">उद्यमिता और कौशल विकास कार्यक्रम (ईएसडीपी)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/उद्योगों के पुनरुद्धार के लिए निधि योजना ( स्फूर्ति).pdf')">उद्योगों के पुनरुद्धार के लिए निधि योजना (स्फूर्ति)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/एमएसएमई - नवोन्मेषी (इन्क्यूबेशन, आईपीआर और डिजाइन).pdf')">एमएसएमई - नवोन्मेषी (इन्क्यूबेशन, आईपीआर और डिजाइन)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/खरीद और विपणन सहायता (पीएमएस) योजना.pdf')">खरीद और विपणन सहायता (पीएमएस) योजना</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/पीएम विश्वकर्मा - कारीगरों और शिल्पकारों को अपने उद्यम बढ़ाने में सक्षम बनाना।.pdf')">पीएम विश्वकर्मा - कारीगरों और शिल्पकारों को अपने उद्यम बढ़ाने में सक्षम बनाना।</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/प्रधानमंत्री रोजगार सृजन कार्यक्रम (पीएमईजीपी).pdf')">प्रधानमंत्री रोजगार सृजन कार्यक्रम (पीएमईजीपी)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/pdf/hindi/प्रशिक्षण संस्थानों को सहायता (एटीआई) योजना.pdf.pdf')">प्रशिक्षण संस्थानों को सहायता (एटीआई) योजना</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/मुद्रा ऋण.pdf')">मुद्रा ऋण</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/राष्ट्रीय एससी-एसटी हब योजना.pdf')">राष्ट्रीय एससी-एसटी हब योजना</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/सूक्ष्म एवं लघु उद्यम क्लस्टर विकास कार्यक्रम ( एमएसई-सीडीपी) योजना.pdf')">सूक्ष्म एवं लघु उद्यम क्लस्टर विकास कार्यक्रम (एमएसई-सीडीपी) योजना</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/सूक्ष्म एवं लघु उद्यमों के लिए ऋण गारंटी योजना (सीजीटीएमएसई).pdf')">सूक्ष्म एवं लघु उद्यमों के लिए ऋण गारंटी योजना (सीजीटीएमएसई)</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', '/pdf/hindi/स्टैंड-अप इंडिया योजना.pdf')">स्टैंड-अप इंडिया योजना</a>
+                            <a href="#" class="report-link" onclick="openModalAndSetAction('openUrl', 'एमएसएमई प्रतिस्पर्धी (लीन) योजना.pdf')">एमएसएमई प्रतिस्पर्धी (लीन) योजना</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            </div>
+        </section>
+        <!-- author section -->
+        <section id="author" class="page-section text-content-section">
+            <div style="display: flex; align-items: flex-start; gap: 2rem;">
+                <img src="Pics/Author.jpg" alt="Author Picture" style="width: 300px; height: 450px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.15); object-fit: cover;" />
+                <div class="text-content" data-lang-key="authorContent">
+                    <p>
+                        Trilok Kumar Jha is a seasoned business strategist and MSME mentor with over 25 years of experience in business, finance, management, and innovation. He brings a powerful blend of corporate excellence and grassroots transformation, having spent 15+ years in the corporate sector, where he led complex business operations, systems implementation, and strategic turnarounds.
+                    </p>
+                    <p>
+                        Over the years, Trilok has empowered more than 50 MSMEs by helping them access funding, reduce operational costs, and implement efficient business process systems. His interventions have included best-in-class inventory and HR practices, helping small businesses become scalable and sustainable.
+                    </p>
+                    <p>
+                        One of his landmark contributions includes the design and implementation of a world-class Skill Evaluation System, benchmarked with TÜV NORD standards, for the prestigious Reliance Refinery in Jamnagar — the world’s largest refinery.
+                    </p>
+                    <p>
+                        His transformation work includes turning a loss-making manpower consultancy into a profit-making venture in just 18 months, by streamlining its operations, revamping its services, and re-aligning its workforce strategy.
+                    </p>
+                    <p>
+                        Through his book “MSME BUSINESS: A Clear and Practical Guide”, Trilok now brings his decades of insight and field experience to aspiring entrepreneurs, small business owners, and growth-stage MSMEs — empowering them to take bold, structured, and successful steps toward business excellence.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- services section -->
+        <section id="services" class="page-section text-content-section">
+            <h2 class="section-title" data-lang-key="servicesTitle">Our Consultancy</h2>
+            
+            <div class="services-container">
+                <div class="service-tile">
+                    <div class="content-image-container">
+                        <div class="image-wrapper">
+                            <img src="Pics/Legal.png" alt="A list">
+                        </div>
+                
+                        <div class="text-wrapper">
+                            <h3 class="service-title", data-lang-key="CFOHead">CFO Services</h3>
+                            <p class="service-description", data-lang-key="CFODesc"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+        
+                <div class="service-tile">
+                    <div class="content-image-container">
+                        <div class="image-wrapper">
+                            <img src="Pics/Sales.png" alt="A list">
+                        </div>
+                
+                        <div class="text-wrapper">
+                            <h3 class="service-title", data-lang-key="SalesHead">Sales and Marketing</h3>
+                            <p class="service-description", data-lang-key="SalesDesc"></p>
+                        </div>
+
+                    </div>
+                </div>
+        
+                <div class="service-tile">
+                    <div class="content-image-container">
+                        <div class="image-wrapper">
+                            <img src="Pics/Human.png" alt="A list">
+                        </div>
+                
+                        <div class="text-wrapper">
+                            <h3 class="service-title", data-lang-key="HumanHead">Human Capital Management</h3>
+                            <p class="service-description", data-lang-key="HumanDesc"></p>
+                        </div>
+
+                    </div>
+                </div>
+        
+                <div class="service-tile">
+                    <div class="content-image-container">
+                        <div class="image-wrapper">
+                            <img src="Pics/Operational.png" alt="A list">
+                        </div>
+                
+                        <div class="text-wrapper">
+                            <h3 class="service-title", data-lang-key="OprHead">Operational Excellence</h3>
+                            <p class="service-description", data-lang-key="OprDesc"></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- contact section -->   
+        <section id="contact" class="page-section text-content-section">
+            <h2 class="section-title" data-lang-key="contactTitle">Contact Us</h2>
+            <div class="text-content">
+                <p class="contact-email" data-lang-key="contactEmail">Email: <a href='mailto:mahavirmsme@gmail.com'>mahavirmsme@gmail.com</a></p>
+            </div>
+        </section>
+        <!-- project reports modal -->      
+        <div id="project-report-modal" class="modal hidden">
+            <div class="modal-content">
+                <button onclick="closeProjectReportModal()" class="modal-close-button">&times;</button>
+                <h3 class="modal-title", data-lang-key="formtitle">Submit Details</h3>
+                <form id="project-report-form" class="modal-form">
+                    <div>
+                        <label for="pr-name">Name</label>
+                        <input id="pr-name" name="name" type="text" required>
+                    </div>
+                    <div>
+                        <label for="pr-email">Email</label>
+                        <input id="pr-email" name="email" type="email" required>
+                    </div>
+                    <div>
+                        <label for="pr-mobile">Mobile Number</label>
+                        <input id="pr-mobile" name="mobile" type="tel" pattern="[0-9]{10}" required>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+        <!-- project reports list -->           
+        <section id="project-reports-list" class="page-section resources-section hidden">
+            <h2 class="section-title">Project Reports Library</h2>
+            <div id="category-list" class="category-list-container"></div>
+            <div id="pdf-list" class="pdf-list-container"></div>
+            <div class="back-button-container">
+                <button id="back-to-categories" class="back-button" style="display:none;">Back to Categories</button>
+                <button onclick="showPage('resources')" class="back-button">Back to Resources</button>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->     
+    <footer class="footer">
+        <div class="footer-container">
+            <p data-lang-key="footerCopyright">&copy; 2025 MahavirMSME. All rights reserved.</p>
+            <p class="footer-tagline" data-lang-key="footerTagline">Empowering MSMEs, Building a Stronger India.</p>
+        </div>
+    </footer>
+
+<script>
+// Schemes related function
+
+//hindi english schemes
+function showSchemeList(language) {
+    // Get the containers for the lists
+    const englishList = document.getElementById('english-schemes-list');
+    const hindiList = document.getElementById('hindi-schemes-list');
+    
+    // Get the buttons
+    const englishBtn = document.getElementById('btn-english-schemes');
+    const hindiBtn = document.getElementById('btn-hindi-schemes');
+
+    // Logic to show/hide lists and set active button state
+    if (language === 'english') {
+        englishList.classList.remove('hidden');
+        hindiList.classList.add('hidden');
+        
+        englishBtn.classList.add('active');
+        hindiBtn.classList.remove('active');
+    } else if (language === 'hindi') {
+        hindiList.classList.remove('hidden');
+        englishList.classList.add('hidden');
+
+        hindiBtn.classList.add('active');
+        englishBtn.classList.remove('active');
+    }
+}
+
+
+// --- SCRIPT TO LOAD PROJECT REPORT CATEGORIES DYNAMICALLY ---
+/**
+ * This function is called when the Resources page is shown.
+ * It fetches the subfolder names from your server.
+ */
+function loadProjectReportCategories() {
+    const container = document.getElementById('project-reports-categories-container');
+    if (!container) return; // Exit if the container isn't on the page
+
+    container.innerHTML = '<p style="color: #e2e8f0;">Loading categories...</p>';
+
+    // Fetch the list of categories from your server's API
+    fetch('/api/project-report-categories')
+        .then(res => res.json())
+        .then(categories => {
+            if (!categories || !categories.length) {
+                container.innerHTML = '<p style="color: #e2e8f0;">No report categories found.</p>';
+                return;
+            }
+            // Create a styled button for each category (subfolder)
+            container.innerHTML = categories.map(cat => {
+                const safeCat = cat.replace(/'/g, "\\'"); // Escape single quotes for the function call
+                // When a button is clicked, it shows the PDFs for that category
+                return `<button class="report-link" onclick="showPdfsForCategory('${encodeURIComponent(cat)}', '${safeCat}')">${cat}</button>`;
+            }).join('');
+        })
+        .catch(error => {
+            console.error('Error loading project report categories:', error);
+            container.innerHTML = '<p style="color: #e2e8f0;">Could not load categories.</p>';
+        });
+}
+
+function showPdfsForCategory(categoryUrl) {
+    // 1. Switch to the dedicated "Project Reports Library" page view
+    showPage('project-reports-list');
+
+    // 2. Load the PDFs for the selected category into that page
+    loadPDFListByCategory(categoryUrl); // This reuses your existing function!
+}
+
+/**
+ * This is the only showPage function you need.
+ * It handles hiding/showing pages, setting the active nav link,
+ * and loading resources when needed.
+ */
+function showPage(pageId) {
+    // 1. Hide all page sections
+    document.querySelectorAll('.page-section').forEach(section => {
+        section.classList.remove('active');
+        // Also add a 'hidden' class to ensure they are visually hidden
+        if (!section.classList.contains('hidden')) {
+            section.classList.add('hidden');
+        }
+    });
+
+    // 2. Show the requested page section
+    const activePage = document.getElementById(pageId);
+    if (activePage) {
+        activePage.classList.add('active');
+        activePage.classList.remove('hidden'); // Make sure it's visible
+    }
+
+    // 3. Update the active state on the navigation link
+    document.querySelectorAll('.nav-link').forEach(link => link.classList.remove('active'));
+    const activeNavLink = document.querySelector(`.nav-link[href="#${pageId}"]`);
+    if (activeNavLink) {
+        activeNavLink.classList.add('active');
+    }
+    
+    // 4. Trigger resource loading if on the "Resources" page
+    if (pageId === 'resources') {
+        loadProjectReportCategories();
+    }
+}
+
+// Add the event listener to the form's submit button.
+document.getElementById('project-report-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('pr-name').value;
+    const email = document.getElementById('pr-email').value;
+    const mobile = document.getElementById('pr-mobile').value;
+
+    fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name, email, mobile })
+    })
+    .then(res => res.json())
+    .then(() => {
+        closeProjectReportModal();
+
+        switch (nextActionAfterSubmit.type) {
+            case 'showPage':
+                showPage(nextActionAfterSubmit.value);
+                // *** IMPORTANT INTEGRATION POINT ***
+                // If the page we are showing is the project reports list,
+                // then we also need to call your function to load the categories.
+                if (nextActionAfterSubmit.value === 'project-reports-list') {
+                    loadCategoryList();
+                }
+                break;
+            case 'openUrl':
+                alert('Thank you! Your download will begin shortly.');
+                window.open(nextActionAfterSubmit.value, '_blank');
+                break;
+            case 'alert':
+                alert(nextActionAfterSubmit.value);
+                break;
+        }
+
+        document.getElementById('project-report-form').reset();
+        nextActionAfterSubmit = { type: 'none', value: null };
+    })
+    .catch(error => console.error('Form submission error:', error));
+});
+
+// --- YOUR PROJECT REPORT CATEGORY & PDF LOADING FUNCTIONS ---
+// (These are the functions you provided earlier)
+function loadCategoryList() {
+    const categoryList = document.getElementById('category-list');
+    const pdfList = document.getElementById('pdf-list');
+    const backBtn = document.getElementById('back-to-categories');
+    
+    if (!categoryList) return;
+
+    categoryList.style.display = 'block'; // Ensure category list is visible
+    pdfList.innerHTML = ''; // Clear any previous PDF lists
+    backBtn.style.display = 'none'; // Hide the back button initially
+    categoryList.innerHTML = '<p>Loading categories...</p>';
+
+    fetch('/api/project-report-categories')
+        .then(res => res.json())
+        .then(categories => {
+            if (!categories.length) {
+                categoryList.innerHTML = '<p>No categories found.</p>';
+                return;
+            }
+            // Create a button for each category
+            categoryList.innerHTML = categories.map(cat =>
+                `<button class="report-link" onclick="loadPDFListByCategory('${encodeURIComponent(cat)}')">${cat}</button>`
+            ).join('');
+        });
+}
+
+function loadPDFListByCategory(category) {
+    const categoryList = document.getElementById('category-list');
+    const pdfList = document.getElementById('pdf-list');
+    const backBtn = document.getElementById('back-to-categories');
+
+    categoryList.style.display = 'none'; // Hide categories
+    pdfList.innerHTML = '<p>Loading reports...</p>';
+    backBtn.style.display = 'block'; // Show the back button
+
+    fetch(`/api/project-reports?category=${category}`)
+        .then(res => res.json())
+        .then(pdfs => {
+            pdfList.innerHTML = pdfs.length ? pdfs.map(pdf =>
+                `<a href="#" data-pdf-url="${pdf.file}" class="report-link" onclick="openModalAndSetAction('openUrl', '${pdf.file}')">${pdf.name}</a>`
+            ).join('') : '<p>No project reports available in this category.</p>';
+        });
+}
+
+// Event listener for the "Back to Categories" button
+document.getElementById('back-to-categories').addEventListener('click', function() {
+    loadCategoryList();
+});
+
+// You can keep your other functions like showPage(), showSchemeList(), etc., below.
+        // Language translation logic
+const translations = {
+en: {
+        siteName: "MahavirMSME",
+        navHome: "Book",
+        navResources: "Resources",
+        navAuthor: "Author",
+        navServices: "Consultancy",
+        navContact: "Contact",
+        homeBookHeading: "MSME BUSINESS: A Clear and Practical Guide",
+        homeBookDesc1: "Discover the definitive guide for MSME initiators, especially in small towns across India. This comprehensive book provides practical insights and actionable strategies to navigate the complexities of starting and growing a successful micro, small, or medium enterprise.",
+        homeBookDesc2: "Unique Feature: This book is thoughtfully crafted to be bilingual (English & Hindi), ensuring accessibility and clarity for a wider audience.",
+        homeBookList: "<p><strong>What You’ll Discover in the Book:</strong></p><p><li>How to Choose the Right Business Idea that suits your passion, skills, and market demand</li>Step-by-step Planning to turn your idea into a working business model</li><li>Complete Guide to Government Schemes like PMEGP, MUDRA, and Stand-Up India</li> <li>DPR (Detailed Project Report) creation for funding and loan approvals</li><li>Legal Compliance Made Simple – registration, GST, licenses, permits</li><li>System Building for Growth – SOPs, KPIs, HR, inventory, accounting</li><li>Digital Marketing & Sales on WhatsApp, Facebook, Amazon, IndiaMART</li> <li>Mindset, Motivation, and Leadership strategies to stay focused and resilient</li><p>",
+        homeBookWhyDifferent: "<p><strong>Why This Book is Different:</strong></p><p>This is not a theoretical or academic book. It is a hands-on action guide, built from over 25 years of real-world experience in business development, MSME consultancy, and innovation strategy. The author brings powerful insights from working with more than 50 MSMEs, including turning around struggling businesses and designing world-class systems.</p>More than business techniques, this book gives you the mental strength and inspiration to push past fear, uncertainty, and hesitation. You'll learn how to think like an entrepreneur, how to bounce back from setbacks, and how to lead your team with purpose and confidence.</p>",
+        clickToOrder: "English Version",
+        clickToOrderhindi: "हिन्दी वर्ज़न",
+        orderLinksSoon: "(Links to various platforms will be added here soon.)",
+        upcomingBooksTitle: "Upcoming Books",
+        upcomingBooksDesc: "Stay tuned for more valuable resources and guides designed to further empower MSMEs across India. Future books will delve into advanced strategies, specific industry insights, and more.",
+        resourcesTitle: "Resources for MSMEs",
+        projectReportsTitle: "Project Reports",
+        projectReportsDesc: "A Detailed Project Report (DPR) is a vital document for MSMEs seeking to establish or expand their business. It outlines the vision, structure, financials, market potential, and operational strategy of the proposed project. Banks and financial institutions rely heavily on the DPR to assess the feasibility and viability of a business before approving loans.</p><p>A well-prepared DPR increases the chances of getting funding under various government schemes like PMEGP, CGTMSE, MUDRA, and Stand-Up India.</p><p>Below are government-approved project reports aligned with the PMEGP scheme, provided for your reference. Please customize the financial details and other parameters as per your specific location and business requirements.</p>",
+        downloadSampleReport: "Download Sample Project Report (PDF)",
+        belowContent1: "The Government of India has provided more than 1,000 business ideas and detailed project reports (DPRs) for free at the portal:- ",
+        belowContent2: "I sincerely thank the government for this commendable initiative and encourage all of you to explore these reports based on your interests, skills, and needs. This information will help you make strong and informed business decisions.",
+        govtSchemesTitle: "Government Schemes",
+        formtitle: "Submit Details",
+        govtSchemesDesc: "The Government of India recognizes the critical role of Micro, Small, and Medium Enterprises (MSMEs) in economic growth, employment generation, and innovation. To support and promote MSMEs, the government has launched various financial, technical, and promotional schemes that provide funding, infrastructure, training, and market access,  some of the MSME scheme are below",
+        moreSchemesSoon: "(More schemes and detailed information coming soon)",
+        authorTitle: "About the Author",
+        authorContent: "<p>With over 25 years of experience in business, finance, management, and innovation, the author of MSME BUSINESS: A Clear and Practical Guide brings a unique blend of corporate insight and grassroots entrepreneurship. Having worked for over 15 years in senior roles across the corporate sector, he has successfully mentored and supported more than 50 MSMEs across India—guiding them in securing funding, designing efficient business process systems, reducing operational costs, and implementing industry-leading inventory and HR practices.</p><p>A key milestone in his career includes the design and development of a world-class skill evaluation system, aligned with TÜV NORD standards, for the Reliance Refinery in Jamnagar—one of the largest in the world. He also played a pivotal role in reviving a loss-making manpower consultancy firm, transforming it into a profitable enterprise within just 18 months through strategic restructuring and performance-driven systems.</p><p>Beyond the corporate realm, he is deeply committed to social impact. He is the Founder of Shri Ram-Janaki Mithila Co-operative Credit Society Ltd (Under Registration)., a transformative grassroots financial initiative based in Bihar. This pioneering effort aims to bring financial literacy, credit access, and self-reliance to underserved communities, empowering youth and local entrepreneurs in the region.</p><p>His work seamlessly bridges the gap between boardroom strategy and ground-level execution, making him a rare expert who not only understands policy and profitability but also deeply values purpose and people.</p>",
+        servicesTitle: "Our Consultancy Services",
+        CFOHead: "Financial gains: The Ultimate Objective of Business, But not Proficiently Managed...",
+        CFODesc: "Our CFO services offer strategic financial leadership to steer your business towards success. Our expert CFOs provide tailored solutions that include developing comprehensive financial strategies, creating accuurate budgets and forecasts, and manging cash flow to ensure operational liquidity. With our guidance, you gain the expertise needed to optimize financial performance, enhance decision-making, and acheive your business objectives",
+        SalesHead: "Globalizations Breeds Competitions; The Right Marketing strategy Fuels Growth",
+        SalesDesc: "Marketing and sales are essential pillars of busineess growth. Together, they drive revenue, expand market reach, and ensure long-term success by aligning efforts to meet customer demands and acheive business objectives.",
+        HumanHead: "The Most Valuable Asset, yet often the Most Mismanaged",
+        HumanDesc: "Human Capital Management (HCM) optimizes employee perfomance by focusing on attracting, recruituing, training, and retaining top talent. It encompasses key HR functions like Compensation, Benefits, Tracking Performance and Development, aligning them with the organization's goals to drive success",
+        OprHead: "The Core Business Growth, Optimizing Processes and Workflows",
+        OprDesc: "Operations Excellence consulting services are focused on acheiving world-class standards in businss processes and management mechanisms that you rely upon when putting your strategic objectives in practice and running day-to-day business. Operations Excellence translates into increased productivity, flexibility, improved customer responsiveness and cost optimization, Streamlined key Business Functions and enhaced Performance.",
+        contactTitle: "Contact Us",
+        contactEmail: "Email: mahavirmsme@gmail.com",
+        footerCopyright: "&copy; 2025 MahavirMSME. All rights reserved.",
+        footerTagline: "Empowering MSMEs, Building a Stronger India."
+    },
+hi: {
+        siteName: "महावीरएमएसएमई",
+        navHome: "किताब",
+        navResources: "संसाधन",
+        navAuthor: "लेखक",
+        navServices: "सेवाएं",
+        navContact: "संपर्क करें",
+        homeBookHeading: "MSME BUSINESS: एक स्पष्ट और व्यावहारिक गाइड",
+        homeBookDesc1: "  यह व्यापक पुस्तक एक सफल सूक्ष्म, लघु या मध्यम उद्यम शुरू करने और उसे विकसित करने की जटिलताओं को समझने में मदद करती है। इसमें व्यावहारिक अंतर्दृष्टियाँ और क्रियान्वयन योग्य रणनीतियाँ दी गई हैं, जो उद्यमियों को हर चरण में मार्गदर्शन प्रदान करती हैं।",
+        homeBookDesc2: "अद्वितीय विशेषता: यह पुस्तक द्विभाषी (अंग्रेजी और हिंदी) होने के लिए सोच-समझकर तैयार की गई है, जो व्यापक दर्शकों के लिए पहुंच और स्पष्टता सुनिश्चित करती है।",
+        homeBookList: "<p><strong>आप इस पुस्तक में क्या जानेंगे:</strong></p><p><li>सही बिजनेस आइडिया कैसे चुनें जो आपके जुनून, कौशल और बाजार की मांग के अनुकूल हो।</li><li>अपने आइडिया को एक कामकाजी बिजनेस मॉडल में बदलने के लिए चरण-दर-चरण योजना।</li><li>PMEGP, MUDRA, और स्टैंड-अप इंडिया जैसी सरकारी योजनाओं के लिए संपूर्ण गाइड।</li><li>फंडिंग और लोन की मंजूरी के लिए डीपीआर (विस्तृत परियोजना रिपोर्ट) बनाना।</li><li>कानूनी अनुपालन को सरल बनाया गया – पंजीकरण, जीएसटी, लाइसेंस, परमिट।</li><li>विकास के लिए सिस्टम का निर्माण – एसओपी (SOPs), केपीआई (KPIs), मानव संसाधन (HR), इन्वेंट्री, लेखांकन (accounting)।</li><li>व्हाट्सएप, फेसबुक, अमेज़ॅन, इंडियामार्ट पर डिजिटल मार्केटिंग और बिक्री।</li><li>केंद्रित और लचीला बने रहने के लिए मानसिकता, प्रेरणा और नेतृत्व की रणनीतियाँ।</li></p>",
+        homeBookWhyDifferent: "<p><strong>यह किताब अलग क्यों है:</strong></p><p>यह कोई सैद्धांतिक या अकादमिक किताब नहीं है। यह एक व्यावहारिक एक्शन गाइड है, जो व्यवसाय विकास, एमएसएमई परामर्श और नवाचार रणनीति में 25 से अधिक वर्षों के वास्तविक अनुभव से बनाई गई है। लेखक 50 से अधिक एमएसएमई के साथ काम करने से प्राप्त अपनी शक्तिशाली अंतर्दृष्टि प्रस्तुत करते हैं, जिसमें संघर्षरत व्यवसायों को मुनाफे में लाना और विश्व स्तरीय प्रणालियों को डिजाइन करना शामिल है।</p>व्यावसायिक तकनीकों से बढ़कर, यह पुस्तक आपको डर, अनिश्चितता और झिझक से आगे बढ़ने की मानसिक शक्ति और प्रेरणा देती है। आप सीखेंगे कि एक उद्यमी की तरह कैसे सोचें, असफलताओं से कैसे उबरें, और अपनी टीम का उद्देश्य और आत्मविश्वास के साथ नेतृत्व कैसे करें।</p>",
+        clickToOrder: "English Version",
+        formtitle: "विवरण जमा करें",
+        clickToOrderhindi: "हिन्दी वर्ज़न",
+        orderLinksSoon: "(विभिन्न प्लेटफार्मों के लिंक जल्द ही यहां जोड़े जाएंगे।)",
+        upcomingBooksTitle: "आगामी पुस्तकें",
+        upcomingBooksDesc: "भारत भर में एमएसएमई को और सशक्त बनाने के लिए डिज़ाइन किए गए अधिक मूल्यवान संसाधनों और मार्गदर्शिकाओं के लिए बने रहें। भविष्य की पुस्तकें उन्नत रणनीतियों, विशिष्ट उद्योग अंतर्दृष्टि और बहुत कुछ में गहराई से उतरेंगी।",
+        resourcesTitle: "एमएसएमई के लिए संसाधन",
+        projectReportsTitle: "परियोजना रिपोर्ट",
+        projectReportsDesc: "<p>एमएसएमई द्वारा अपने व्यवसाय की स्थापना या विस्तार के लिए एक विस्तृत परियोजना रिपोर्ट (DPR) एक अत्यंत महत्वपूर्ण दस्तावेज होती है। यह प्रस्तावित परियोजना की दृष्टि, संरचना, वित्तीय विवरण, बाजार की संभावनाएँ और संचालन रणनीति को स्पष्ट रूप से दर्शाती है। बैंक और वित्तीय संस्थान किसी भी व्यवसाय को ऋण स्वीकृति से पहले उसकी व्यावहारिकता और लाभप्रदता का मूल्यांकन करने के लिए DPR पर ही निर्भर करते हैं।</p><p>एक अच्छी तरह से तैयार की गई DPR, PMEGP, CGTMSE, मुद्रा, और स्टैंड-अप इंडिया जैसी विभिन्न सरकारी योजनाओं के अंतर्गत फंडिंग प्राप्त करने की संभावनाओं को कई गुना बढ़ा देती है।</p><p>नीचे PMEGP योजना के अनुरूप स्वीकृत सरकारी परियोजना रिपोर्टें दी गई हैं, जो आपकी जानकारी के लिए हैं। कृपया इनकी वित्तीय जानकारी और अन्य विवरणों को अपने क्षेत्र और आवश्यकताओं के अनुसार अनुकूलित करें|</p>",
+        downloadSampleReport: "नमूना परियोजना रिपोर्ट (पीडीएफ) डाउनलोड करें",
+        belowContent1: "भारत सरकार ने एक पोर्टल पर 1,000 से अधिक व्यवसायिक विचार और विस्तृत परियोजना रिपोर्ट (DPR) मुफ्त में प्रदान किए हैं:- ",
+        belowContent2: "मैं इस सराहनीय पहल के लिए सरकार को धन्यवाद देता हूँ और आप सभी से आग्रह करता हूँ कि आप इन रिपोर्टों का उपयोग अपनी रुचि, योग्यता और सुविधा के अनुसार अवश्य करें। यह जानकारी आपके व्यवसायिक निर्णयों को मजबूत और स्पष्ट दिशा देने में सहायक होगी।",
+        govtSchemesTitle: "सरकारी योजनाएं",
+        govtSchemesDesc: "भारत भर में एमएसएमई का समर्थन और सशक्तिकरण करने के लिए डिज़ाइन की गई सरकारी योजनाओं और पहलों की एक क्यूरेटेड सूची का अन्वेषण करें। धन, सब्सिडी और विकासात्मक कार्यक्रमों पर जानकारी प्राप्त करें।",
+        mudraYojana: "मुद्रा योजना",
+        mudraYojanaDesc: "सूक्ष्म उद्यमों के लिए वित्तीय सहायता।",
+        standUpIndia: "स्टैंड-अप इंडिया योजना",
+        standUpIndiaDesc: "महिलाओं और एससी/एसटी के बीच उद्यमिता को बढ़ावा देना।",
+        cgtmse: "सूक्ष्म और लघु उद्यमों के लिए क्रेडिट गारंटी फंड ट्रस्ट (सीजीटीएमएसई)",
+        pmegp: "प्रधानमंत्री रोजगार सृजन कार्यक्रम (पीएमईजीपी)",
+        moreSchemesSoon: "(अधिक योजनाएं और विस्तृत जानकारी जल्द ही आ रही है)",
+        authorTitle: "लेखक",
+        authorContent: "<p>व्यवसाय, वित्त, प्रबंधन और नवाचार के क्षेत्र में 25 से अधिक वर्षों के अनुभव के साथ, MSME BUSINESS: एक स्पष्ट और व्यावहारिक गाइड के लेखक, कॉर्पोरेट रणनीति और जमीनी उद्यमशीलता — दोनों के संतुलित जानकार हैं। उन्होंने 15 वर्षों तक प्रमुख कॉर्पोरेट संस्थानों में वरिष्ठ पदों पर कार्य किया, और देशभर में 50 से अधिक MSME उद्यमों को फंडिंग प्राप्त करने, व्यावसायिक प्रक्रियाओं को डिज़ाइन करने, लागत कम करने, और श्रेष्ठ इन्वेंटरी व HR प्रथाओं को लागू करने में मार्गदर्शन दिया है।</p><p>उनकी उपलब्धियों में एक प्रमुख कार्य है — रिलायंस रिफाइनरी, जामनगर के लिए TÜV NORD मानकों से मेल खाती विश्व स्तरीय कौशल मूल्यांकन प्रणाली का डिज़ाइन। इसके अलावा, उन्होंने एक घाटे में चल रही मैनपावर कंसल्टेंसी को मात्र 18 महीनों में लाभदायक संस्था में बदल दिया, जो उनकी रणनीतिक क्षमता और कार्यान्वयन दक्षता का प्रमाण है।</p><p>कॉर्पोरेट क्षेत्र के बाहर भी उन्होंने सामाजिक सुधारों में उल्लेखनीय योगदान दिया है। वे श्री राम-जानकी मिथिला को-ऑपरेटिव क्रेडिट सोसाइटी लिमिटेड, बिहार के संस्थापक हैं  (Registration Stage)— जो एक नवाचारी वित्तीय संस्था है, जिसका उद्देश्य आर्थिक सशक्तिकरण, वित्तीय साक्षरता और स्वरोजगार को बढ़ावा देना है।</p><p>उनका कार्य नीति और लाभ के साथ-साथ लोगों और उद्देश्य की गहराई को भी छूता है। वे एक ऐसे विशेषज्ञ हैं, जो रणनीति, सिस्टम और समाज — तीनों को जोड़ते हुए एक स्थायी बदलाव की दिशा में कार्यरत हैं</p>",
+        servicesTitle: "हमारी परामर्श सेवाएं",
+        CFOHead: "वित्तीय लाभ: व्यवसाय का अंतिम उद्देश्य, लेकिन कुशलता से प्रबंधित नहीं...",
+        CFODesc: "हमारी सीएफओ (CFO) सेवाएं आपके व्यवसाय को सफलता की ओर ले जाने के लिए रणनीतिक वित्तीय नेतृत्व प्रदान करती हैं। हमारे विशेषज्ञ सीएफओ विशेष समाधान प्रदान करते हैं जिनमें व्यापक वित्तीय रणनीतियों का विकास, सटीक बजट और पूर्वानुमान तैयार करना, और परिचालन तरलता सुनिश्चित करने के लिए नकदी प्रवाह का प्रबंधन शामिल है। हमारे मार्गदर्शन से, आप वित्तीय प्रदर्शन को अनुकूलित करने, निर्णय लेने की क्षमता को बढ़ाने और अपने व्यावसायिक उद्देश्यों को प्राप्त करने के लिए आवश्यक विशेषज्ञता प्राप्त करते हैं।",
+        SalesHead: "वैश्वीकरण प्रतिस्पर्धा को जन्म देता है; सही मार्केटिंग रणनीति विकास को बढ़ावा देती है",
+        SalesDesc: "मार्केटिंग और सेल्स व्यवसाय के विकास के आवश्यक स्तंभ हैं। ये दोनों मिलकर राजस्व बढ़ाते हैं, बाजार की पहुंच का विस्तार करते हैं, और ग्राहकों की मांगों को पूरा करने तथा व्यावसायिक उद्देश्यों को प्राप्त करने के प्रयासों को संरेखित करके दीर्घकालिक सफलता सुनिश्चित करते हैं।",
+        HumanHead: "सबसे मूल्यवान संपत्ति, फिर भी अक्सर सबसे कुप्रबंधित",
+        HumanDesc: "मानव पूंजी प्रबंधन (HCM) शीर्ष प्रतिभाओं को आकर्षित करने, भर्ती करने, प्रशिक्षित करने और बनाए रखने पर ध्यान केंद्रित करके कर्मचारी के प्रदर्शन को अनुकूलित करता है। इसमें मुआवज़ा, लाभ, प्रदर्शन और विकास की ट्रैकिंग जैसे प्रमुख मानव संसाधन (HR) कार्य शामिल हैं, जो संगठन के लक्ष्यों के साथ सफलता को बढ़ावा देने के लिए संरेखित होते हैं।",
+        OprHead: "मुख्य व्यवसाय विकास, प्रक्रियाओं और वर्कफ़्लो का अनुकूलन",
+        OprDesc: "परिचालन उत्कृष्टता (Operations Excellence) परामर्श सेवाएं व्यावसायिक प्रक्रियाओं और प्रबंधन तंत्र में विश्व स्तरीय मानकों को प्राप्त करने पर केंद्रित हैं, जिन पर आप अपने रणनीतिक उद्देश्यों को व्यवहार में लाने और दिन-प्रतिदिन के व्यवसाय को चलाने के लिए भरोसा करते हैं। परिचालन उत्कृष्टता का परिणाम उत्पादकता में वृद्धि, लचीलापन, बेहतर ग्राहक प्रतिक्रिया और लागत अनुकूलन, सुव्यवस्थित मुख्य व्यावसायिक कार्य और बेहतर प्रदर्शन के रूप में होता है।",
+        contactTitle: "हमसे संपर्क करें",
+        contactEmail: "ईमेल: 'mahavirmsme@gmail.com",
+        footerCopyright: "&copy; 2025 महावीरएमएसएमई। सर्वाधिकार सुरक्षित।",
+        footerTagline: "एमएसएमई को सशक्त बनाना, एक मजबूत भारत का निर्माण।"
+    }
+};
+
+let currentLang = 'en'; // Default language
+// Function to set the language
+function setLanguage(lang) {
+    currentLang = lang;
+    document.querySelectorAll('[data-lang-key]').forEach(element => {
+        const key = element.getAttribute('data-lang-key');
+        if (translations[lang] && translations[lang][key]) {
+            // Check for any key that contains HTML and use innerHTML
+            if (key === 'authorContent' || key === 'projectReportsDesc' || key === 'CFOHead' || key === 'servicesContent' || key === 'homeBookList' || key ==='homeBookWhyDifferent') {
+                element.innerHTML = translations[lang][key];
+            } else {
+                element.textContent = translations[lang][key];
+            }
+        }
+    });
+    // Update the language switcher button text
+    const langSwitcher = document.getElementById('language-switcher');
+    if (langSwitcher) {
+        langSwitcher.textContent = lang === 'en' ? 'हिन्दी / English' : 'English / हिन्दी';
+    }
+}
+    // Event listener for language switcher button
+document.addEventListener('DOMContentLoaded', () => {
+        showPage('home'); // Show home page by default
+        setLanguage('en'); // Set default language to English
+
+        const langSwitcher = document.getElementById('language-switcher');
+        if (langSwitcher) {
+            langSwitcher.addEventListener('click', () => {
+                setLanguage(currentLang === 'en' ? 'hi' : 'en');
+            });
+        }
+    });
+let selectedCategory = null;
+let hideBackToCategories = false;
+
+// This object will store what action to take after the form is submitted.
+let nextActionAfterSubmit = { type: 'none', value: null };
+
+/**
+ * This is the SINGLE function to open the modal.
+ * It also remembers what to do after the form is submitted.
+ * @param {string} actionType - The type of action (e.g., 'showPage', 'openUrl', 'alert').
+ * @param {string} actionValue - The data needed for the action (e.g., page ID, PDF URL, or message).
+ */
+function openModalAndSetAction(actionType, actionValue) {
+    // Store the intended action
+    nextActionAfterSubmit = { type: actionType, value: actionValue };
+
+    // Show the modal form
+    const modal = document.getElementById('project-report-modal');
+    if (modal) {
+        modal.classList.remove('hidden');
+    }
+}
+
+// This function closes the modal.
+function closeProjectReportModal() {
+    const modal = document.getElementById('project-report-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+    }
+}
+</script>
+</body>
+</html>
